@@ -1,7 +1,5 @@
-const { hexStripZeros } = require("ethers/lib/utils")
-
 const main = async () => {
-    const waveContractFactory = await hexStripZeros.ethers.getContractFactory("WavePortal");
+    const waveContractFactory = await hre.ethers.getContractFactory("WavePortal");
     const waveContract = await waveContractFactory.deploy();
     await waveContract.deployed();
     console.log("COntract deployed to:", waveContract.address);
