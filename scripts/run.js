@@ -4,7 +4,7 @@ const main = async () => {
     const waveContract = await waveContractFactory.deploy();
     await waveContract.deployed();
     
-    console.log("COntract deployed to:", waveContract.address);
+    console.log("Contract deployed to:", waveContract.address);
     console.log("Contract deployed by:", owner.address);
 
     let waveCount;
