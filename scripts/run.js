@@ -8,12 +8,12 @@ const main = async () => {
     console.log("Contract deployed by:", owner.address);
 
     let waveCount;
-    waveCount = await waveContract.getTotolWaves();
+    waveCount = await waveContract.getTotalWaves();
 
     let waveTxn = await waveContract.wave();
     await waveTxn.wait();
 
-    waveCount = await waveContract.getTotolWaves();
+    waveCount = await waveContract.getTotalWaves();
 };
 
 const runMain =async () => {
