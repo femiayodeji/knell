@@ -16,7 +16,7 @@ contract WavePortal{
 
     Wave[] waves;
 
-    constructor(){
+    constructor() payable {
         console.log("Hey! Stay longer with the question");
     }
 
